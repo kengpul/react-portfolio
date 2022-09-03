@@ -1,13 +1,92 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #22262a;
+  color: white;
+  font-family: "Staatliches", cursive;
+}
+img {
+  width: 100%;
+  height: 5rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#navbarNav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding-right: 20px;
+}
+
+.nav-item a {
+  font-size: 2em;
+}
+
+#intro {
+  height: 28rem;
+}
+.sub {
+  color: #94a4b4;
+}
+#intro button {
+  border: 1px solid white;
+  width: 8rem;
+}
+
+#links {
+  position: absolute;
+  top: 35%;
+}
+#links a {
+  display: block;
+  position: relative;
+  left: -60%;
+  font-size: 1.2em;
+  padding: 12px 15px;
+  transition: all 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.099);
+}
+#links a:hover {
+  left: -1%;
+}
+#links i {
+  padding-left: 15px;
+  font-size: 1.2em;
+}
+
+#linkedin {
+  background-color: #0077b5;
+}
+#github {
+  background-color: #333;
+}
+#email {
+  background-color: #6fc2b0;
+}
+#resume {
+  background-color: #565f69;
+}
+
+#mainFooter {
+  font-family: "Inconsolata", monospace;
+  background-color: #171a1d;
+  color: #94a4b4;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0 0;
+}
+#mainFooter span a {
+  color: white;
+  text-decoration: none;
+}
+.footer-items {
+  justify-content: space-around;
+}
+
+.nav-item {
+  z-index: 2;
+  margin-top: -20px;
+}
+.nav-link {
+  width: 10rem;
+  float: right;
+  border-radius: 5px;
 }
