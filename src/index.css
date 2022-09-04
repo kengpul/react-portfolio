@@ -3,6 +3,12 @@ body {
   color: white;
   font-family: "Staatliches", cursive;
   position: relative;
+  overflow: hidden;
+
+}
+
+.home {
+  height: 72.5vh;
 }
 
 img {
@@ -23,7 +29,7 @@ img {
 }
 
 #intro {
-  height: 28rem;
+  height: 20rem;
 }
 
 .sub {

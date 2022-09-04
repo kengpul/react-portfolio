@@ -1,3 +1,7 @@
+body {
+    overflow: visible;
+}
+
 .project p {
     font-family: "Inconsolata", monospace;
     color: #94a4b4;
