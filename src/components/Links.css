@@ -1,0 +1,38 @@
+#links {
+    position: absolute;
+    top: 35%;
+}
+
+#links a {
+    display: block;
+    position: relative;
+    left: -60%;
+    font-size: 1.2em;
+    padding: 12px 15px;
+    transition: all 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.099);
+}
+
+#links a:hover {
+    left: -1%;
+}
+
+#links i {
+    padding-left: 15px;
+    font-size: 1.2em;
+}
+
+#linkedin {
+    background-color: #0077b5;
+}
+
+#github {
+    background-color: #333;
+}
+
+#email {
+    background-color: #6fc2b0;
+}
+
+#resume {
+    background-color: #565f69;
+}
