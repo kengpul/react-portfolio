@@ -2,7 +2,9 @@ body {
   background-color: #22262a;
   color: white;
   font-family: "Staatliches", cursive;
+  position: relative;
 }
+
 img {
   width: 100%;
   height: 5rem;
@@ -21,11 +23,13 @@ img {
 }
 
 #intro {
-  height: 21rem;
+  height: 28rem;
 }
+
 .sub {
   color: #94a4b4;
 }
+
 #intro button {
   border: 1px solid white;
   width: 8rem;
@@ -35,6 +39,7 @@ img {
   position: absolute;
   top: 35%;
 }
+
 #links a {
   display: block;
   position: relative;
@@ -43,9 +48,11 @@ img {
   padding: 12px 15px;
   transition: all 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.099);
 }
+
 #links a:hover {
   left: -1%;
 }
+
 #links i {
   padding-left: 15px;
   font-size: 1.2em;
@@ -54,37 +61,25 @@ img {
 #linkedin {
   background-color: #0077b5;
 }
+
 #github {
   background-color: #333;
 }
+
 #email {
   background-color: #6fc2b0;
 }
+
 #resume {
   background-color: #565f69;
 }
 
-#mainFooter {
-  font-family: "Inconsolata", monospace;
-  background-color: #171a1d;
-  color: #94a4b4;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 20px 0 0;
-}
-#mainFooter span a {
-  color: white;
-  text-decoration: none;
-}
-.footer-items {
-  justify-content: space-around;
-}
 
 .nav-item {
   z-index: 2;
   margin-top: -20px;
 }
+
 .nav-link {
   width: 10rem;
   float: right;
