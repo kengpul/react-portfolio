@@ -4,7 +4,6 @@ body {
   font-family: "Staatliches", cursive;
   position: relative;
   overflow: hidden;
-
 }
 
 .home {
@@ -29,7 +28,7 @@ img {
 }
 
 #intro {
-  height: 20rem;
+  height: 28rem;
 }
 
 .sub {
