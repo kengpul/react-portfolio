@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useStorage } from '../../hooks/useStorage';
+import { useFirebase } from '../../hooks/useFirebase';
 
 export default function Admin() {
     const [title, setTitle] = useState('');
@@ -9,12 +9,17 @@ export default function Admin() {
     const [code, setCode] = useState('');
     const [image, setImage] = useState();
 
-    const { upload } = useStorage();
+    const { addCollection, error, isPending } = useFirebase();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log({ title, tags, about, demo, code, image });
-        upload(image)
+        addCollection({ title, tags, about, demo, code, image });
+        setTitle('');
+        setTags('');
+        setAbout('');
+        setDemo('');
+        setCode('');
+        setImage(null);
     }
 
     return (
@@ -85,7 +90,11 @@ export default function Admin() {
                             />
                             <label htmlFor="formFile" className="form-label">Default file input example</label>
                         </div>
-                        <button className="btn btn-success w-100 mb-5">Submit</button>
+                        {error && <p className='text-danger'>{error}</p>}
+                        {isPending ?
+                            <button className="btn btn-success w-100 mb-5" disabled>Loading...</button> :
+                            <button className="btn btn-success w-100 mb-5">Submit</button>
+                        }
                     </form>
                 </div>
             </div>
