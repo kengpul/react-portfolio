@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useStorage } from '../../hooks/useStorage';
 
 export default function Admin() {
     const [title, setTitle] = useState('');
@@ -6,11 +7,14 @@ export default function Admin() {
     const [about, setAbout] = useState('');
     const [demo, setDemo] = useState('');
     const [code, setCode] = useState('');
-    const [image, setImage] = useState('');
+    const [image, setImage] = useState();
 
-    const handleSubmit = (e) => {
+    const { upload } = useStorage();
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
         console.log({ title, tags, about, demo, code, image });
+        upload(image)
     }
 
     return (
@@ -77,8 +81,7 @@ export default function Admin() {
                                 className="form-control"
                                 type="file"
                                 id="formFile"
-                                value={image}
-                                onChange={e => setImage(e.target.value)}
+                                onChange={e => setImage(e.target.files[0])}
                             />
                             <label htmlFor="formFile" className="form-label">Default file input example</label>
                         </div>
