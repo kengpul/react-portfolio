@@ -21,7 +21,6 @@ export default function Admin() {
         setCode('');
         setImage(null);
     }
-
     return (
         <div className="container admin text-dark">
             <div className="row d-flex justify-content-center">
@@ -81,14 +80,13 @@ export default function Admin() {
                             />
                             <label htmlFor="code">Code link: </label>
                         </div>
-                        <div>
+                        <div className='mb-3'>
                             <input
                                 className="form-control"
                                 type="file"
                                 id="formFile"
                                 onChange={e => setImage(e.target.files[0])}
                             />
-                            <label htmlFor="formFile" className="form-label">Default file input example</label>
                         </div>
                         {error && <p className='text-danger'>{error}</p>}
                         {isPending ?
