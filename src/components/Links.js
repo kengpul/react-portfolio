@@ -17,7 +17,7 @@ export default function Links() {
                 &nbsp;&nbsp;&nbsp;&nbsp; EMAIL <FaEnvelope className='ms-3' />
             </a>
             <a type="button" id="resume" className="btn text-white"
-                href="https://drive.google.com/file/d/1v6cheSRU18nMKBW0Um_32eHDKTEGW6_e/view"
+                href="https://drive.google.com/file/d/1-nZALfxBb9CxNGhwx8RR4EO3uYbP-rny/view"
                 target="_blank" rel="noreferrer">
                 RESUME <FaIdBadge className='ms-3' />
             </a>
