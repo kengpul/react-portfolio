@@ -99,3 +99,9 @@ h3 {
 .project .modal a:hover {
     background-color: white;
 }
+
+.project .img-modal {
+    /* max-height: 300px; */
+    max-width: 450px;
+    margin: auto;
+}
