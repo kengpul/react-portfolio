@@ -12,12 +12,12 @@ export default function Links() {
                 target="_blank" rel="noreferrer">
                 &nbsp;&nbsp;&nbsp;GITHUB <FaGithub className='ms-3' />
             </a>
-            <a type="button" id="email" className="btn text-white" href="mailto:paulpulgares24#gmail.com"
+            <a type="button" id="email" className="btn text-white" href="mailto:paulpulgares24@gmail.com"
                 target="_blank" rel="noreferrer">
                 &nbsp;&nbsp;&nbsp;&nbsp; EMAIL <FaEnvelope className='ms-3' />
             </a>
             <a type="button" id="resume" className="btn text-white"
-                href="https://drive.google.com/file/d/1-nZALfxBb9CxNGhwx8RR4EO3uYbP-rny/view"
+                href="https://drive.google.com/file/d/1Td6ZeOh4jHSr69UQKWCzUKFBaNPYLNgt/view"
                 target="_blank" rel="noreferrer">
                 RESUME <FaIdBadge className='ms-3' />
             </a>
