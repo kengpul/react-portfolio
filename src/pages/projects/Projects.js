@@ -22,8 +22,9 @@ export default function Projects() {
     <div className="container project">
       <div className="my-5 text-start">
         <h2 className="display-4">PORTFOLIO</h2>
-        <p>
-          // These are my favorite projects I've worked on for the past years.
+        {/* eslint-disable-next-line */}
+        <p>  
+          // These are my favorite projects I've worked on for the past years. 
           Have a look around and make sure to hit me up!
         </p>
       </div>
@@ -38,7 +39,7 @@ export default function Projects() {
               >
                 <div class="card-body placeholder">
                   <p class="card-text placeholder-glow d-flex justify-content-center">
-                    <a class="btn bg-white disabled placeholder col-2 m-auto"></a>
+                    <button class="btn bg-white disabled placeholder col-2 m-auto" />
                   </p>
                 </div>
               </div>

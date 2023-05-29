@@ -37,7 +37,7 @@ h3 {
     height: 320px;
 }
 
-.project .placeholder-card a {
+.project .placeholder-card button {
     position: absolute;
     bottom: 10%;
 }
