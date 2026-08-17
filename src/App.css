@@ -1,1 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Staatliches&display=swap');
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#mainFooter {
+    margin-top: auto;
+}

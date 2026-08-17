@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebase/config";
+import { resolveProjectImage } from "../../data/projectImages";
 
 import "./Project.css";
 
@@ -31,15 +32,15 @@ export default function Projects() {
 
       <div className="row g-4 mb-5">
         {projects.length === 0 &&
-          Array.from({ length: 4 }, () => (
-            <div className="col-md-6">
+          Array.from({ length: 4 }, (_, i) => (
+            <div className="col-md-6" key={i}>
               <div
-                class="card bg-secondary placeholder-glow p-0 placeholder-card"
+                className="card bg-secondary placeholder-glow p-0 placeholder-card"
                 aria-hidden="true"
               >
-                <div class="card-body placeholder">
-                  <p class="card-text placeholder-glow d-flex justify-content-center">
-                    <button class="btn bg-white disabled placeholder col-2 m-auto" />
+                <div className="card-body placeholder">
+                  <p className="card-text placeholder-glow d-flex justify-content-center">
+                    <button className="btn bg-white disabled placeholder col-2 m-auto" />
                   </p>
                 </div>
               </div>
@@ -54,8 +55,8 @@ export default function Projects() {
               <div className="box">
                 <img
                   className="img-fluid img-preview"
-                  src={project.photoUrl}
-                  alt=""
+                  src={resolveProjectImage(project)}
+                  alt={project.title}
                 />
 
                 <button
@@ -83,9 +84,9 @@ export default function Projects() {
                           <div className="row">
                             <div className="col-md-7 img-modal">
                               <img
-                                src={project.photoUrl}
+                                src={resolveProjectImage(project)}
                                 className="img-fluid"
-                                alt=""
+                                alt={project.title}
                               />
                             </div>
                             <div className="col-md-5">
